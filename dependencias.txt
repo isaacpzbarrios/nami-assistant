@@ -1,0 +1,4 @@
+npm install buffer
+npm install @aws-sdk/client-polly
+npm install aws-sdk
+npm install three @react-three/fiber

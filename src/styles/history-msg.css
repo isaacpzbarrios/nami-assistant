@@ -1,0 +1,33 @@
+.chat-container {
+    width: 350px;
+    background: rgb(23,85,122,0.5);
+    background: linear-gradient(90deg, rgba(217, 217, 217, 0.035) 0%, rgba(154, 154, 154, 0.047) 100%);
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 50%;
+    overflow: hidden;
+    transition: 0.3s all ease;
+}
+
+.chat-container:hover {
+    cursor: pointer;
+    opacity: 100%;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.chat-content {
+    padding: 20px;
+    max-height: 300px;
+    overflow-y: scroll;
+    scrollbar-width: none; /*Firefox*/
+    -ms-overflow-style: none; /*IE y Edge*/
+}
+
+.chat-content::-webkit-scrollbar {
+    display: none; /*WebKit (Chrome, Safari, Opera) */
+}
+
+
+
+

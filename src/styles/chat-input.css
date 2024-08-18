@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #102C57;
+    --secondary-color: #FF7F3E;
+    --tertiary-color: #FEB941;
+    --grey-color: #F5F7F8;
+    --grey-dark-color: #526d82bd;
+    --font-size: 16px;
+}
+
+
+.wrapper .typing-area {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .typing-area .input-field {
+    width: 100%;
+    position: relative;
+}
+
+.wrapper .typing-area .input-field input {
+    width: 100%;
+    height: 60px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    background: var(--grey-color);
+    -webkit-box-shadow: inset 1px -3px 23px -2px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: inset 1px -3px 23px -2px rgba(0, 0, 0, 0.33);
+    box-shadow: inset 1px -3px 23px -2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 5px 20px 0px rgba(107, 102, 130, 0.6);
+    -moz-box-shadow: 0px 5px 20px 0px rgba(107, 102, 130, 0.6);
+    box-shadow: 0px 5px 20px 0px rgba(107, 102, 130, 0.6);
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s all ease;
+}
+
+.input-field input {
+    padding-left: 15px;
+}
+
+
+.wrapper .typing-area .input-field .send-btn,
+.microphone-btn {
+    position: absolute;
+    top: 20%;
+    right: 15px;
+    background: transparent;
+    background-color: var(--grey-dark-color);
+    border: none;
+    padding: 8px 8px;
+    border-radius: 50%;
+    color: var(--grey-dark-color);
+    outline: none;
+    cursor: pointer;
+}
+
+.wrapper .typing-area .input-field .send-btn:hover,
+.microphone-btn:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
+/*btn send*/
+.wrapper .typing-area .input-field .send-btn {
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s all ease;
+}
+
+.wrapper .typing-area .input-field .send-btn .icon {
+    stroke: var(--grey-color);
+}
+
+.wrapper .typing-area .input-field .send-btn:hover .icon {
+    stroke: white;
+}
+
+
+.wrapper .typing-area .input-field input:valid~.send-btn {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/*btn microphone*/
+.wrapper .typing-area .input-field .microphone-btn {
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.3s all ease;
+}
+
+.wrapper .typing-area .input-field .microphone-btn:hover .icon {
+    stroke: white;
+}
+
+.wrapper .typing-area .input-field .microphone-btn .icon {
+    stroke: var(--grey-color);
+}
+
+.wrapper .typing-area .input-field input:valid~.microphone-btn {
+    opacity: 0;
+    pointer-events: none;
+}

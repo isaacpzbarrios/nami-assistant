@@ -1,0 +1,23 @@
+.chat-bubble-bot {
+    padding: 10px;
+    border-radius: 20px 20px 20px 0px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.7) 0%, rgba(255,255,255,1) 100%);
+    align-self: flex-start;
+}
+
+.chat-bubble-user {
+    padding: 10px;
+    border-radius: 20px 20px 0px 20px;
+    margin-bottom: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+    background: rgb(255,127,62);
+    background: linear-gradient(90deg, rgba(255,127,62,0.8) 0%, rgba(254, 159, 65, 0.8) 100%);
+    color: white;
+    align-self: flex-end;
+    margin-left: auto;
+}
